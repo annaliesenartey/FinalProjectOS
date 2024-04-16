@@ -12,7 +12,7 @@ Users input the number of processes to simulate and specify burst times for each
 
 - Round Robin: Allows users to specify a time quantum for simulation. Processes execute for the given quantum, and those not completing their burst time are enqueued for later execution.
 
-- MLFQ (Multilevel Feedback Queue): Utilizes three queues: Q1 (round robin with time quantum 4), Q2 (round robin with time quantum 6), and Q3 (first come first serve). Processes run based on queue priority and move down queues as they exhaust time allotment. Processes in Q3 for 10 seconds are considered starving and moved to Q1. Preemptive arrival of processes prioritizes lower priority processes.
+- MLFQ (Multilevel Feedback Queue): Utilizes three queues: Q1 (round robin with time quantum 8), Q2 (round robin with time quantum 16), and Q3 (First Come First Serve). Processes run based on queue priority and move down queues as they exhaust time allotment. Processes in Q3 for 10 seconds are considered starving and moved to Q1. Preemptive arrival of processes prioritizes lower priority processes.
 
 - Provides visualizations of scheduling results for each algorithm.
 - Provides statistics such as total waiting time, total turnaround time, total response time, average waiting, and average turnaround time.
